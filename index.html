@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Gabriel Felix Huerta Araujo</title>
-</head>
-<body>
-  <header class="header">
-    <h1>Gabriel Felix Huerta Araujo</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home" style="--color: red"></section>
-    <section id="about" style="--color: blue"></section>
-    <section id="projects" style="--color: green"></section>
-    <section id="contact" style="--color: yellow"></section>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Gabriel Felix Huerta Araujo</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Gabriel Felix Huerta Araujo</h1>
+      <nav>
+        <ul class="navigation-list">
+          <li id="homeLink"><a href="#home">Home</a></li>
+          <li id="aboutLink"><a href="#about">About</a></li>
+          <li id="projectsLink"><a href="#projects">Projects</a></li>
+          <li id="contactLink"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="home"
+        class="main-section selected"
+        style="
+          --color: #e4e0e1;
+          background-image: url(assets//backgrunds/background_01x360.png);
+        "
+      ></section>
+      <section
+        id="about"
+        class="main-section"
+        style="
+          --color: #2b2f1d;
+          background-image: url(assets//backgrunds/background_02x360.png);
+        "
+      ></section>
+      <section
+        id="projects"
+        class="main-section"
+        style="
+          --color: #161422;
+          background-image: url(assets//backgrunds/background_03x360.png);
+        "
+      ></section>
+      <section
+        id="contact"
+        class="main-section"
+        style="
+          --color: #528f93;
+          background-image: url(assets//backgrunds/background_04x360.png);
+        "
+      ></section>
+    </main>
+
+    <script src="scripts/navigation_script.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
